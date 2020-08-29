@@ -1,0 +1,1 @@
+kill -9 $(ps auxww | awk '/webdriver/ {print $2'})
