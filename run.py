@@ -19,15 +19,7 @@ pmt_form_id = "divPayment"
 driver = webdriver.Chrome()
 
 
-#  Issues / TODO
-# ------------------------------------------
-#  - If items have additional selection
-#  - Handle when an item runs out of stock
-#  - Handle when the html page changes
-#  - How to actually calculate inflation
-#  - Do we need the price in SGD?
-# ------------------------------------------
-
+# TODO: SGD prices need to include shipping
 def get_sgd_price():
     span = driver.find_element_by_xpath("//div[@id='priceSection']//span[@class='monetary-price-value']")
     return span.get_attribute("content")

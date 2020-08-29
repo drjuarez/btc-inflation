@@ -10,7 +10,8 @@ python run.py
 ### Pre-requisites
 uses pipenv to manage dependencies
 
-
+### Notes
+./clean.sh to kill all hanging chrome processes when testing
 
 #  Issues / TODO
 # ------------------------------------------
